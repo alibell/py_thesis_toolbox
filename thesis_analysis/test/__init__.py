@@ -1,0 +1,2 @@
+from .test_qualitatif import testQualitatif
+from .test_quantitatif import testQuantitatif

@@ -1,0 +1,4 @@
+statsmodels
+scipy
+pandas
+numpy

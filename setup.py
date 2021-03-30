@@ -36,7 +36,7 @@ setup(
     include_package_data=True,
     keywords='py_thesis_toolbox',
     name='py_thesis_toolbox',
-    packages=find_packages(include=['py_thesis_toolbox', 'py_thesis_toolbox.*']),
+    packages=find_packages(),
     setup_requires=setup_requirements,
     test_suite='tests',
     tests_require=test_requirements,

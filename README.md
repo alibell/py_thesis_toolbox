@@ -1,5 +1,7 @@
 # py_thesis_toolbox
 
+Main repository : https://gogs.alibellamine.me/alibell/py_thesis_toolbox/
+
 Outils d'analyse des données de thèses.
 Applique une description des données suivi d'une série de tests univariés.
 

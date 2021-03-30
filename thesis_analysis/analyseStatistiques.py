@@ -1,3 +1,5 @@
+import math
+import pandas as pd
 from .test import testQualitatif, testQuantitatif
 
 class analyseStatistiques ():

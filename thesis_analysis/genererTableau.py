@@ -250,7 +250,7 @@ class genererTableau ():
         modalites = [int(x) if type(x) != type(str()) else x for x in modalites]
         
         # On affiche le nom de l'axe avec si nécessaire
-        modalites_avec_str = [axe+" "+str(x) for x in modalites]
+        modalites_avec_str = [variable+" "+str(x) for x in modalites]
         
         if ajouter_nom:
             return(modalites_avec_str)

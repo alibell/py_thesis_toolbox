@@ -551,7 +551,7 @@ class genererTableau ():
             else:
                 fichier_sortie = open(chemin, "wb")
             
-            fichier_sortie.write(file)
+            fichier_sortie.write(fichier_sortie)
         else:
             # On renvoie le buffer
             return (f)

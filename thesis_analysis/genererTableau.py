@@ -30,7 +30,10 @@ class genererTableau ():
         
         self.data = data
         self.liste_variables = list(data.keys()) # Liste des variables analysables
-        self.liste_axes = list(list(data.values())[0]["sous_groupes"].keys()) # Liste des axes d'analyses
+        if "sous_groupes" in list(data.values())[0]:
+            self.liste_axes = list(list(data.values())[0]["sous_groupes"].keys()) # Liste des axes d'analyses
+        else:
+            self.liste_axes = []
         
         # On récupère la liste des modalités de chaque axes
         self.liste_modalites = dict(zip(

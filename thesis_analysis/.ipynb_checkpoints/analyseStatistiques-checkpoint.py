@@ -158,7 +158,11 @@ class analyseStatistiques ():
                     Key = Nom de la variable, Value : type de variable : quantitative ou qualitative
                 axes : axes d'analyse de la variable, doivent être de type qualitative. Liste de variables.                
         """
+<<<<<<< HEAD
                 
+=======
+        
+>>>>>>> bd16659386e33e7eeb0e5b3796a4d04948d03358
         # Sortie des résultats
         resultats = {}
         

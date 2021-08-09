@@ -368,7 +368,6 @@ class genererTableau ():
             
             liste_labels = self.data[variable]["global"].keys()
             
-            print(liste_labels)
             for label in liste_labels:
                                 
                 # On ignore le label total

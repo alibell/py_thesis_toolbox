@@ -368,6 +368,7 @@ class genererTableau ():
             
             liste_labels = self.data[variable]["global"].keys()
             
+            print(liste_labels)
             for label in liste_labels:
                                 
                 # On ignore le label total
@@ -401,8 +402,8 @@ class genererTableau ():
                             )) # Données spécifique à chaque axe
                     
                     ligne = ligne + ["", "", ""] # Espaces vides entre 2 axes
-
-                lignes.append(ligne)
+                
+                    lignes.append(ligne)
         
         return(lignes)
     
@@ -540,7 +541,7 @@ class genererTableau ():
         elif format_fichier == 'tsv':
             csv.writer(f, delimiter = "\t").writerows(tableau)
         elif format_fichier in ['ods','xlsx']:
-            sheet = pe.Sheet(data)
+            sheet = pe.Sheet(tableau)
             f = sheet.save_to_memory(format_fichier, f)
         elif format_fichier == 'raw':
             f = tableau
@@ -646,7 +647,8 @@ class genererTableau ():
         tableau.append(["" for x in range(len(tableau[-1]))])
         
         # Ajout des axes
-        for axe in axes:
-            tableau = tableau + self._generer_lignes_detail(variable, axe)
+        if axes is not None:
+            for axe in axes:
+                tableau = tableau + self._generer_lignes_detail(variable, axe)
         
         return(tableau)
